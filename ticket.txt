@@ -1,0 +1,56 @@
+In a theatre there is window and aisle seats.the two integers are get from the user for window and aisle seats.
+Then user has to select indow or aisle seat(w,W,a,A) and then give input for no of seats..
+
+INPUT:
+20 30
+w 10
+
+OUTPUT:
+seats available.
+
+
+INPUT:
+20 30
+w 33
+
+
+OUTPUT:
+seats not available. 
+
+
+JAVA PROGRAM:
+import java.util.*;
+public class ticket
+{
+public stati void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+int w,a,n;
+char s;
+w=sc.nexInt();
+a=sc.nextInt();
+s=sc.next().charAt(0);
+n=sc.nextInt();
+if(s=='w' || s=='W')
+{
+if(n<=w)
+{
+System.out.println("SEATS AVAILABLE");
+}
+else
+{
+System.out.println("SEATS NOT AVAILABLE");
+}
+}
+if(s=='a' || s=='A')
+{
+if(n<=a)
+{
+System.out.println("SEATS AVAILABLE");
+}
+else{
+System.out.println("SEATS NOT AVAILABLE");
+}
+}
+}
+}
